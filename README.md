@@ -1,0 +1,2 @@
+# sql-for-adtech
+foundations
