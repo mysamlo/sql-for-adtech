@@ -1,5 +1,5 @@
 campaign_id,campaign_name,budget,start_date,end_date
-campaign_A,"Summer Sale Campaign",1000,"2025-05-01","2025-05-31"
-campaign_B,"Back to School Promo",1500,"2025-05-10","2025-06-15"
-campaign_C,"New Product Launch",2000,"2025-05-14","2025-06-30"
-campaign_D,"Test Campaign",500,"2025-05-05","2025-05-20"
+campaign_A,Summer Sale Campaign,1000,5/1/25,5/31/25
+campaign_B,Back to School Promo,1500,5/10/25,6/15/25
+campaign_C,New Product Launch,2000,5/14/25,6/30/25
+campaign_D,Test Campaign,500,5/5/25,5/20/25
