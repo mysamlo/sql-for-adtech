@@ -1,0 +1,17 @@
+impression_id,campaign_id,user_id,impression_time,clicked,viewable,device,creative_id
+1,campaign_A,user_1,"2025-05-14 09:00:00",1,1,mobile,creative_X
+2,campaign_B,user_2,"2025-05-14 09:05:00",0,1,desktop,creative_Y
+3,campaign_A,user_3,"2025-05-14 09:10:00",0,0,mobile,creative_X
+4,campaign_C,user_1,"2025-05-14 09:15:00",1,1,desktop,creative_Z
+5,campaign_B,user_4,"2025-05-14 09:20:00",0,1,mobile,creative_Y
+6,campaign_A,user_2,"2025-05-13 17:00:00",1,1,desktop,creative_X
+7,campaign_C,user_3,"2025-05-13 18:00:00",0,1,mobile,creative_Z
+8,campaign_B,user_1,"2025-05-13 19:00:00",0,0,desktop,creative_Y
+9,campaign_A,user_4,"2025-05-15 10:00:00",0,1,mobile,creative_Y
+10,campaign_C,user_2,"2025-05-15 11:00:00",1,0,desktop,creative_Z
+11,campaign_B,user_3,"2025-05-15 12:00:00",0,1,mobile,creative_X
+12,campaign_A,user_1,"2025-05-15 13:00:00",1,1,desktop,creative_Z
+13,campaign_C,user_4,"2025-05-13 10:00:00",0,0,mobile,creative_Y
+14,campaign_B,user_2,"2025-05-13 11:00:00",1,1,desktop,creative_X
+15,campaign_A,user_3,"2025-05-14 11:00:00",0,1,mobile,creative_Z
+16,campaign_C,user_1,"2025-05-14 12:00:00",1,1,desktop,creative_Y

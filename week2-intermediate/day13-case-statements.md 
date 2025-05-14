@@ -1,0 +1,64 @@
+## Day 13 – Conditional Logic with CASE Statements
+
+### Topics
+- Understanding the `CASE` statement for conditional logic
+- Creating new categories or flags based on data values
+- Using `CASE` in `SELECT`, `WHERE`, `ORDER BY`, and aggregate functions
+
+### Ad Tech Relevance
+Categorizing campaigns based on performance (e.g., high/medium/low CTR). Flagging potential issues based on certain conditions (e.g., very low viewability). Creating custom groupings for analysis.
+
+### Tools
+- [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/sql-case-statements/) - Learn about `CASE` statements.
+- Look for examples of using `CASE` for data categorization in analytics.
+
+### Practice Dataset
+Use the `impressions.csv` dataset.
+
+### Examples
+
+**1. Categorizing impressions as "Clicked" or "Not Clicked":**
+
+```sql
+SELECT impression_id,
+       CASE
+           WHEN clicked = 1 THEN 'Clicked'
+           ELSE 'Not Clicked'
+       END AS click_status
+FROM impressions;
+```
+
+**2. Categorizing devices:**
+
+```sql
+SELECT impression_id, device,
+       CASE device
+           WHEN 'mobile' THEN 'Mobile Device'
+           WHEN 'desktop' THEN 'Desktop Device'
+           ELSE 'Other'
+       END AS device_category
+FROM impressions;
+```
+
+**3. Counting impressions by click status:**
+
+```sql
+SELECT
+    CASE
+        WHEN clicked = 1 THEN 'Clicked'
+        ELSE 'Not Clicked'
+    END AS click_status,
+    COUNT(*) AS num_impressions
+FROM impressions
+GROUP BY click_status;
+```
+
+### Practice Questions
+
+Using the `impressions.csv` dataset:
+
+1.  Categorize viewability as "Viewed" (if `viewable` is 1) and "Not Viewed" (if `viewable` is 0).
+2.  Create a new column that categorizes `campaign_id` 'campaign_A' as "Promo Campaign" and all others as "Standard Campaign".
+3.  Count the number of impressions for each device category ('Mobile Device', 'Desktop Device', 'Other').
+4.  Create a column that flags impressions as "High Engagement" if they were clicked and viewed, and "Low Engagement" otherwise.
+5.  Order the impressions so that clicked impressions appear before not clicked impressions.
